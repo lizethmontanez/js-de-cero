@@ -35,3 +35,16 @@ if(creditos >=10 && promedio >=8.5){
 }else{
     console.log("No tienes derecho a una beca")
 }
+
+//PRACTICA CAMPUS
+let calificacion = 62;
+
+if (calificacion >= 90) {
+    console.log("Excelente");
+} else if (calificacion >= 75 && calificacion < 90) {
+    console.log("Bien");
+} else if (calificacion >= 60 && calificacion < 75) {
+    console.log("Suficiente");
+} else {
+    console.log("No has aprobado");
+}
