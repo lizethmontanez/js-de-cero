@@ -1,3 +1,4 @@
+//primer característica de los array es que están en []
 // Array de frutas 
 let frutas = ['manzana', 'plátano', 'naranja']; 
 
@@ -32,6 +33,7 @@ for (let i = 0; i < frutas.length; i++) {
     console.log(frutas[i]);
 }
 
+
 //EJERCICIO LECTURA
 let colores = ['rojo', 'verde', 'azul', 'amarillo'];
 
@@ -50,3 +52,31 @@ console.log(colores);
 colores.shift()
 console.log(colores);
 
+
+//EJERCICIO CLASE
+
+let verduras = ['papa', 'chayote', 'lechuga', 'chile', 'espinaca', 'jitomate']; 
+console.log("Imprimiendo verduras de ciclo for")
+
+for(let indice = 0; indice < verduras.length; indice++){
+    console.log(verduras[indice])
+}
+
+console.log("metodos de arreglos");
+let personas=[];
+
+personas.push('Ana'); //agregar
+personas.push('Diego');
+personas.push('Lizeth');
+personas.push('Marcela');
+console.log(personas);
+
+personas.pop(); //quitar última persona
+console.log(personas);
+
+personas.unshift('Alex'); //agregar al inicio del arreglo
+personas.unshift('Yolanda');
+console.log(personas);
+
+personas.shift();
+console.log(personas);
