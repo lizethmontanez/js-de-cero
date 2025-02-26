@@ -11,6 +11,8 @@ function areaRectangulo (a, b) {
     return area;
 }
 
+const areaRectanguloAF = (a,b) => b*a;
+
 //circulo
 function areaCirculo(r) {
     const Pi = 3.1416
@@ -28,6 +30,8 @@ function areaCirculod(d) {
 function celsiusAFahrenheit(celsius) {
     return (celsius * 9/5) + 32;
 }
+
+const celsiusAFahrenheitAF = (celsiusAF) => (celsiusAF * 9/5) +32;
 
 //numero par
 function parOImpar(n) {
@@ -76,4 +80,23 @@ agregarLibro("La cabaña");
 agregarLibro("IT");
 agregarLibro("JS para principiantes");
 
+mostrarLibrosLeidos();
+
+//Arrow function
+let librosLeidosAF = [];
+
+// Función para agregar un libro
+const agregarLibro = (tituloLibro) => librosLeidosAF.push(tituloLibro);
+
+// Agregar libros al arreglo
+agregarLibro("El principito");
+agregarLibro("Marianela");
+agregarLibro("El psicoanalista");
+
+console.log(librosLeidosAF);
+
+// Función para mostrar los libros leídos
+const mostrarLibrosLeidos = () => librosLeidosAF.forEach(libro => console.log(libro));
+
+// Llamamos a la función para mostrar los libros
 mostrarLibrosLeidos();

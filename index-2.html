@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Hola mundo</h1>
+
+    <!--Selección de DOM mediante ID-->
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+
+    <!--Selección de DOM mediante Class-->
+    <p class="texto">Este es el primer párrafo</p>
+    <p class="texto">Este es el segundo párrafo</p>
+    <p class="texto">Este es el tercero párrafo</p>
+
+    <button onclick="cambiarColor()">Cambiar color</button>
+
+    <!--Selección por etiqueta-->
+    <p>Hola soy un parrafo</p>
+    <p>hola, soy párrafo 2</p>
+    <button onclick="ocultarParrafo()">Oculta el segundo párrafo</button>
+
+    <!--usando queryselector-->
+    <div>
+        <p>Mi perra se llama Nana</p>
+    </div>
+
+    <p>mi otra perra se llama Brunis</p>
+    <button onclick="cambiarTextoDiv()">Cambiar texto dentro de DIV</button>
+
+    <!--usando queryselectorAll-->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <button onclick="marcarItems()">Marcar items</button>
+
+    <script src="main.js"></script>
+</body>
+</html>

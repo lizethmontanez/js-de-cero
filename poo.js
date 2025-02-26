@@ -52,3 +52,5 @@ function mostrarArea(figura){
 
 mostrarArea(miCirculo);
 mostrarArea(miRectangulo);
+
+// 5. Encapsulamiento: proteger los datos y el comportamiento de un objeto al usar un #
