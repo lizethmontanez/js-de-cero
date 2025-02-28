@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pastelería La Especial</title>
+</head>
+<body>
+    <!--Cabecera con barra de navegacion-->
+    <header>
+        <h1>Pastelería La Especial</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="menu-inicio">Inicio</a></li>
+                <li><a href="#" id="menu-productos">Menú</a></li>
+                <li><a href="#" id="menu-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a nuestra Pastelería</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt velit iste necessitatibus? Iure totam dolorum vero inventore, exercitationem aliquam, possimus rerum, nobis itaque corporis ratione voluptate! Hic aut eveniet reiciendis.</p>
+        </section>
+
+        <section id="productos" style="display: none;">
+            <h2>Prueba nuestros deliciosos productos</h2>
+            <div id="lista-productos">
+                <div class="producto">
+                    <h3>Pastel del chocolate</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <button class="agregar-carrito" data-nombre="Pastel de chocolate" data-precio="250">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <h3>Pastel del fresa</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <button class="agregar-carrito" data-nombre="Pastel de fresa" data-precio="150">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <h3>Cheesecake</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <button class="agregar-carrito" data-nombre="Cheesecake" data-precio="150">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div id="carrito">
+                <h2>Carrito:</h2>
+                <ul id="lista-carrito"></ul>
+                <p>Total: $ <span id="total-carrito">0</span></p>
+            </div>
+        </section>
+
+        <section id="contacto" style="display: none;">
+            <h2>Contáctanos</h2>
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <input type="mensaje" name="mensaje" id="mensaje" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div id="mensaje-enviado" style="display: none;">
+                <p>¡Gracias! Mensaje enviado</p>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
