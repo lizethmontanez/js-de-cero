@@ -20,14 +20,16 @@ function iniciarApp() {
 function agregarComentario(comentarios, comentarioInput, listaComentarios) {
     const comentarioHecho = comentarioInput.value.trim();
     if (comentarioHecho) {
+        const fechaActual = new Date();  // Obtiene la fecha y hora actual
         const nuevoComentario = {
-            nombre: comentarioHecho
+            nombre: comentarioHecho,
+            fecha: fechaActual.toLocaleString() // Formatea la fecha y hora
         };
 
         comentarios.push(nuevoComentario);
 
         const li = document.createElement('li');
-        li.textContent = nuevoComentario.nombre;
+        li.textContent = `${nuevoComentario.nombre} - ${nuevoComentario.fecha}`;         
         listaComentarios.appendChild(li);
 
         comentarioInput.value = '';
